@@ -1,0 +1,29 @@
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -50px;
+
+  &_paragraph {
+    width: 65%;
+    margin-top: -10px;
+    color: #48484a;
+  }
+
+  &_title {
+    color: #48484a;
+  }
+
+  @media (min-width: 426px) and (max-width: 1025px) {
+    &_paragraph {
+      width: 60%;
+      margin-bottom: 80px;
+      font-size: 24px;
+    }
+
+    &_title {
+      margin-top: 90px;
+      font-size: 36px;
+    }
+  }
+}

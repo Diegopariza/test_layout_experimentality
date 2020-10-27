@@ -1,0 +1,124 @@
+.form {
+  background-image: url("../images/background_form_mobile.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 515px;
+  background-repeat: no-repeat;
+  background-size: 27rem;
+
+  &_title {
+    color: white;
+    margin-top: 40px;
+  }
+
+  &_container {
+    border: solid 1px white;
+    border-radius: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &_inputs {
+    border-radius: 5px;
+    height: 20px;
+    opacity: 0.5;
+    border: 0;
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  &_input-submit {
+    border-radius: 5px;
+    width: 40%;
+    margin-left: 50%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    height: 25px;
+    border: 0;
+    color: #1e1e1e;
+  }
+
+  &_paragraph {
+    width: 80%;
+    margin-left: 19%;
+    color: white;
+  }
+
+  &_input-date {
+    margin-left: 11%;
+    width: 80%;
+    border-radius: 5px;
+    opacity: 0.5;
+    border: 0;
+    height: 21px;
+  }
+
+  &_label-accept {
+    margin-left: 2%;
+    color: white;
+  }
+
+  &_input-checkbox {
+    margin-left: 0%;
+    /* Doble-tamaño Checkboxes */
+    -ms-transform: scale(1.5); /* IE */
+    -moz-transform: scale(1.5); /* FF */
+    -webkit-transform: scale(1.5); /* Safari y Chrome */
+    -o-transform: scale(1.5); /* Opera */
+    padding: 5px;
+    opacity: 0.4;
+  }
+
+  &_label-information {
+    color: white;
+    margin-left: 10%;
+  }
+
+  @media (min-width: 426px) and (max-width: 1025px) {
+    background-image: url("../images/background_form_desktop.png");
+    background-size: 75rem;
+    height: 560px;
+    background-position-x: -11rem;
+
+    &_container {
+      width: 60%;
+    }
+
+    &_paragraph {
+      width: 94%;
+      margin-left: 2%;
+    }
+
+    &_input-checkbox {
+      margin-left: 2%;
+      /* Doble-tamaño Checkboxes */
+      -ms-transform: scale(1.5); /* IE */
+      -moz-transform: scale(1.5); /* FF */
+      -webkit-transform: scale(1.5); /* Safari y Chrome */
+      -o-transform: scale(1.5); /* Opera */
+      padding: 5px;
+      opacity: 0.4;
+    }
+
+    &_inputs {
+      height: 28px;
+    }
+
+    &_input-date {
+      height: 31px;
+    }
+
+    &_accept {
+      width: 95%;
+    }
+
+    &_input-submit {
+      width: 30%;
+      margin-left: 61%;
+      height: 28px;
+    }
+  }
+}
